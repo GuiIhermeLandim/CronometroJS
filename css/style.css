@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hide {
+    display: none !important;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(230, 240, 255);
+}
+
+.container {
+    margin-top: 5em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.5em;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    font-size: 5em;
+
+}
+
+#milliseconds {
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.buttons {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    padding: 0.7em;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#startBtn, #continueBtn, #pauseBtn {
+    color: #FFF;
+    background-color: rgba(1, 207, 197, 0.849);
+    margin-right: 1em;
+}
+
+#resetBtn {
+    color: #000000;
+    border: solid 1px black;
+    background-color: rgb(230, 240, 255);
+}
+
+#startBtn:hover, #continueBtn, #pauseBtn {
+    color: #ffffff;
+    border: solid 1px black;
+    background-color: rgba(0, 177, 168, 0.904);
+    cursor: pointer;
+    letter-spacing: 5px;
+    transition: .5s;
+}
+
+#resetBtn:hover {
+    color: #ffffff;
+    border: solid 1px black;
+    background-color: rgba(226, 0, 0, 0.6);
+    cursor: pointer;
+    letter-spacing: 5px;
+    transition: .5s;
+}
+
+#minutes, #seconds, #milliseconds { 
+    border-radius: 15px;
+    padding: 5px;
+}
+
